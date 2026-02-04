@@ -16,3 +16,4 @@ interview.txt
 oreilly
 **.model
 /venv/*
+.env
