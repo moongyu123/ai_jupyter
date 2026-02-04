@@ -8,9 +8,9 @@ ENV HOME="/root"
 WORKDIR ${HOME}
 
 # 사내에서 실행할때 회사 인증서 등록이 필요
-COPY .certs/WorxphereCA.pem /etc/pki/ca-trust/source/anchors/WorxphereCA.pem
-RUN apt-get update && apt-get install -y ca-certificates && \
-    update-ca-certificates
+#COPY .certs/WorxphereCA.pem /etc/pki/ca-trust/source/anchors/WorxphereCA.pem
+#RUN apt-get update && apt-get install -y ca-certificates && \
+#    update-ca-certificates
 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
