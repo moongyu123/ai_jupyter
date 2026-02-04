@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: jupyter-local-ai-moongyu
+    ports:
+      - "8888:8888"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/home/jupyter-user/src
+      - ./sys:/home/jupyter-user/sys
+      - ./README.md:/home/jupyter-user/README.md:ro
