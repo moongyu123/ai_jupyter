@@ -19,9 +19,9 @@ Purchase the book:
 cd /프로젝트 폴더
 
 # 1. 가상환경 생성
-python -m venv venv
+python3 -m venv venv
 # 2. 가상환경 활성화
-venv/Scripts/active
+source venv/Scripts/active
 
 # 3. python 버전에 맞춘 requiremnts.txt 생성
 pip install pip-tools  
